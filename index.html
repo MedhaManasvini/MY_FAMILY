@@ -1,0 +1,48 @@
+<doctype!HTML>
+
+    <html>
+
+    <head>
+        <title> Family </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <center>
+        <h1>💕My Family💞</h1>
+        <img style="width: 20%; height: 100%;" id="Album" src="My Img.png">
+        <div>
+            <button type="button" onclick="update()">Next >></button>
+        </div>
+        <p id="Name">Medha Manasvini (💕Me)</p>
+    </center>
+    </body>
+
+    <script>
+        var Names_of_family = [
+            "Medha Manasvini (💕Me)",
+            "Sushmita Chandrayan (💕My Mother)",
+            "Mukesh Kumar Roy (💕My Father)",
+        ];
+        var image = [
+            "My Img.png",
+            "Screenshot at Jun 13 15-57-55 copy.png",
+            "Screenshot at Jun 18 21-18-40.png"
+        ];
+        var i = 0;
+
+        function update() {
+           
+            i++;
+            var number = 2;
+            if(i>number){
+                i = 0
+            }
+           
+            document.getElementById("Name").innerHTML = Names_of_family[i];
+            document.getElementById("Album").src = image[i];
+        }
+
+    </script>
+
+    </html>
